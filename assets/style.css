@@ -1,0 +1,131 @@
+:root {
+  background-color: rgba(0, 0, 0, 0.842);
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-size: 62.5%;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+  font-size: 5.4rem;
+   color:antiquewhite;
+   margin-bottom: 5rem;
+}
+
+h2 {
+
+font-size: 40px;
+margin-bottom: 4rem;
+ 
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 200px;
+}
+
+.flex-column {
+  display: flex;
+flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.justify-center {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.btn {
+  font-size: 50px;
+  padding: 10px 0;
+  width: 300%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(90deg, rgb(250, 235, 215) 0%, rgb(0, 0, 0, 0.842) 100% );
+  border-radius: 4%;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 white;
+  transition: transform 150ms;
+  transform:scale(1.05);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+
+}
+
+#highscore-btn {
+  background-color: rgba(255, 254, 249, 0.904);
+}
+
+#highscore-btn:hover {
+  box-shadow: inset rgba(67, 245, 23, 0.904);
+}
+
+/*end css*/
+
+.end-form-container {
+  width: 250%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+
+}
+
+input {
+  margin-bottom: 16px;
+  width: 20;
+  padding: 50px;
+  font-size: 30px;
+  border: none;
+  box-shadow: 0 5px 5px 0 black; 
+
+}
+
+.input::placeholder {
+  color: gray;
+}
+
+#username {
+  margin-bottom: 50px;
+  width: 250%;
+  outline: none;
+}
+
+#saceScoreBtn {
+  border: none;
+}
+
+
+

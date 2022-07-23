@@ -1,0 +1,96 @@
+
+span {
+    display: flex;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+
+
+body {
+    color: antiquewhite;
+}
+
+#question {
+    font-size: 50px;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 10px;
+    background: black;
+    font-size: 3rem;
+    min-width: 80rem;
+
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px  white;
+    transform: scale(1.05);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem 3rem;
+    color: aliceblue;
+
+}
+
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+
+}
+
+.correct {
+    background: linear-gradient(32deg rgba(23, 245, 97, 0.904) 0% rgb(41, 232, 111) 100%) ;
+}
+
+.incorrect {
+    background: linear-gradient(32deg rgba(250, 38, 23, 0.904) 100%) ;
+}
+
+#hud {
+    display: flex;
+    justify-content:space-between ;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 300px;
+    height: 110px;
+    border: 10px solid rgb(47, 255, 75);
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(47, 255, 75);
+    width: 0%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+    min-width: 40rem;
+    }
+}
+    
+
