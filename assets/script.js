@@ -70,7 +70,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/assets/end.html')
+        return window.location.assign('end.html')
 
     }
 
@@ -131,7 +131,7 @@ function myTimer() {
     if (sec == 0) {
         clearInterval(time);
         prompt("Time out!! :(");
-        return window.location.assign('/assets/end.html')
+        return window.location.assign('end.html')
     }
 }
 
