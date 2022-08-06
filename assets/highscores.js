@@ -1,3 +1,6 @@
+
+//This is the script that will list the High Scores
+
 const highScoresList = document.querySelector("#highScoresList")
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 

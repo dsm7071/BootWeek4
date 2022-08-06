@@ -1,3 +1,5 @@
+/* This is the global style sheet for several objects */
+
 :root {
   background-color: rgba(0, 0, 0, 0.842);
 }
@@ -20,7 +22,7 @@ h2 {
 
 font-size: 40px;
 margin-bottom: 4rem;
- 
+
 }
 
 .container {
@@ -109,7 +111,7 @@ input {
   padding: 50px;
   font-size: 30px;
   border: none;
-  box-shadow: 0 5px 5px 0 black; 
+  box-shadow: 0 5px 5px 0 black;
 
 }
 

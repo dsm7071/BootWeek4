@@ -1,3 +1,5 @@
+//This is the script for the main game.
+
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
@@ -7,7 +9,7 @@ const timeEl = document.querySelector(".time");
 const mainEl = document.getElementById("main");
 
 
-
+//This are the respective variables and functions for the questions.
 let currentQuestion = {}
 let acceptingAnswers = true
 let score = 0
@@ -54,7 +56,7 @@ let questions = [
 ]
 
 
-
+//This is setting the scores and then redirect to end page as well after running out of max questions
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 4
@@ -92,6 +94,8 @@ getNewQuestion = () => {
     acceptingAnswers = true
 }
 
+//This will keep track of the answers and apply if the are correct or incorrect and score accordingly.
+
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return
@@ -121,6 +125,8 @@ incrementScore = num => {
     scoreText.innerText = score
  
 }
+
+//This is the timer which will take you back to the wnd page if time runs out.
 
 let sec = 60;
 let time = setInterval(myTimer, 1000);
